@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   api:
-    build: .\PromoShareAPI
+    build: .
     container_name: PromoShareAPI-server
     restart: always
-    network-mode: bridge
+    network_mode: bridge
     ports:
-      - "127.0.0.1:8885:80/tcp"
+      - "127.0.0.1:8885:8080/tcp"
